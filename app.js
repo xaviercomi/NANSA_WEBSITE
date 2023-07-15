@@ -7,15 +7,22 @@ window.onload = () => {
   sectionWords.style.display = "none";
 };
 
-function mostrarVentana() {
+function muestraVentana() {
   ventana.classList.toggle('hidden');
 }
 
-function arrancaAnimacion() {
-  console.log('Enterthedragon');
+function empiezaAnimacion() {
   sectionWords.style.display = "flex";
 }
 
-nosotros.addEventListener('click', mostrarVentana);
+function muestraPortafolio() {
+  menuPortafolio.classList.toggle('hidden');
+}
 
-botonUnete.addEventListener('mouseenter', arrancaAnimacion);
+function muestraDownload() {
+  menuDownload.classList.toggle('hidden');
+}
+
+nosotros.addEventListener('click', muestraVentana);
+
+botonUnete.addEventListener('click', empiezaAnimacion);

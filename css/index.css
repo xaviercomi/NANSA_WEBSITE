@@ -36,11 +36,11 @@ a {
   background: rgba(0, 0, 0, .2);
   display: flex;
   align-items: center;
+  padding-top: 10px;
   flex-flow: row nowrap;
   position: fixed;
   justify-content: space-evenly;
   border-bottom: 1px solid rgba(255, 255, 255, .5);
-
 }
 
 .logo {
@@ -56,9 +56,9 @@ a {
 }
 
 .nav {
-  justify-content: center;
-  flex: 1 1 auto;
   display: flex;
+  flex: auto;
+  justify-content: space-evenly;
 }
 
 .nav a {
@@ -70,6 +70,38 @@ a {
 
 .nav a:hover {
   color: #ababab;
+}
+
+.desplegable {
+  display: inline-block;
+}
+
+.desplegable-contingut {
+  display: none;
+  position: absolute;
+  width: auto;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.desplegable:hover .desplegable-contingut {
+  display: block;
+}
+
+.desplegable-contingut a {
+  display: block;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.desplegable-contingut a:hover {
+  display: block;
+  color: #ababab;
+}
+
+.btn-menu:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .social {
@@ -90,11 +122,13 @@ a {
 
 .main-text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-family: 'Montserrat';
   font-size: 15px;
   color: #ffffff;
-  margin-top: 300px;
+  margin-top: 400px;
 }
 
 .log_buttons {
@@ -243,9 +277,8 @@ h4 {
 }
 
 #ventana-popup {
-  min-height: 500px;
+  min-height: 800px;
 }
-
 
 .hidden {
   display: none;
