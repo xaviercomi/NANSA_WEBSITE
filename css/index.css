@@ -40,7 +40,7 @@ a {
   flex-flow: row nowrap;
   position: fixed;
   justify-content: space-evenly;
-  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  border-bottom: 1px solid rgba(255, 255, 255, .4);
 }
 
 .logo {
@@ -81,7 +81,8 @@ a {
   position: absolute;
   width: auto;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .desplegable:hover .desplegable-contingut {
@@ -98,10 +99,6 @@ a {
 .desplegable-contingut a:hover {
   display: block;
   color: #ababab;
-}
-
-.btn-menu:hover {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .social {
@@ -128,7 +125,7 @@ a {
   font-family: 'Montserrat';
   font-size: 15px;
   color: #ffffff;
-  margin-top: 400px;
+  margin-top: 350px;
 }
 
 .log_buttons {
@@ -310,6 +307,7 @@ button:hover {
   font-size: 5rem;
   display: inline-block;
   animation: move 3s ease-in-out;
+  animation-delay: 4s;
 }
 
 @keyframes move {
