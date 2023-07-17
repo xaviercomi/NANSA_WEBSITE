@@ -1,12 +1,8 @@
 const nosotros = document.getElementById('nosotros');
 const ventana = document.getElementById('ventana-popup');
-const botonUnete = document.getElementById('boton-unete')
-const sectionWords = document.getElementById('span-words');
-
-window.addEventListener('load', () => {
-  sectionWords.style.animationDelay = "7s";
-  sectionWords.style.display = "none";
-});
+const botonUnete = document.getElementById('boton-unete');
+const sectionWords = document.querySelector('.words');
+const wordsSpan = document.getElementById('span-words');
 
 function muestraVentana() {
   ventana.classList.toggle('hidden');
@@ -14,6 +10,7 @@ function muestraVentana() {
 
 function empiezaAnimacion() {
   sectionWords.style.display = "flex";
+  wordsSpan.style.animationPlayState = "running";
 }
 
 nosotros.addEventListener('click', muestraVentana);

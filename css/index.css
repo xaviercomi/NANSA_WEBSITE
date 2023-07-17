@@ -294,7 +294,7 @@ button:hover {
 
 .words {
   font-size: 0%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-size: 5rem;
@@ -306,8 +306,7 @@ button:hover {
   color: white;
   font-size: 5rem;
   display: inline-block;
-  animation: move 3s ease-in-out;
-  animation-delay: 4s;
+  animation: move 2s ease;
 }
 
 @keyframes move {
