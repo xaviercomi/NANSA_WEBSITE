@@ -22,7 +22,12 @@ function cierraVentana() {
   if (ventana.classList.value = 'popup') {
     ventana.classList.toggle('hidden');
   }
-  console.log(ventana.classList);
+
+}
+
+function enterPassword() {
+
+
 }
 
 
@@ -36,4 +41,4 @@ portafolio.addEventListener('mouseover', cierraVentana);
 
 download.addEventListener('mouseover', cierraVentana);
 
-download.addEventListener('onclick', enterPassword);
+downloadCV.addEventListener('click', enterPassword);
