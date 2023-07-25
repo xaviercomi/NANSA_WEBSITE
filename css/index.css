@@ -33,7 +33,7 @@ a {
 
 .menu {
   width: 100%;
-  min-height: 17%;
+  min-height: 10%;
   background: rgba(0, 0, 0, .5);
   display: flex;
   align-items: center;
@@ -54,8 +54,8 @@ a {
 }
 
 .logo-nansa {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 
 .home {
@@ -92,16 +92,20 @@ a {
 }
 
 .desplegable {
-  display: inline-block;
+  text-align: left;
+  width: 170px;
+  display: row nowrap;
+  margin: 15px;
 }
 
 .desplegable-contingut {
+  text-align: left;
+  background-color: rgba(0, 0, 0, .1);
+  width: 170px;
   display: none;
   position: absolute;
-  width: auto;
   overflow: auto;
-  padding-top: 45px;
-  background-color: rgba(0, 0, 0, .5);
+  padding: 45px 10px 10px 10px;
 }
 
 .desplegable:hover .desplegable-contingut {
