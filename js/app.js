@@ -25,12 +25,6 @@ function cierraVentana() {
 
 }
 
-function enterPassword() {
-
-
-}
-
-
 nosotros.addEventListener('click', muestraVentana);
 
 botonUnete.addEventListener('mouseover', empiezaAnimacion);

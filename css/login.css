@@ -11,60 +11,61 @@ body {
   background-color: black;
 }
 
-form {
-  height: 520px;
-  width: 400px;
-  background-color: rgba(255, 255, 255, .1);
-  padding: 5px;
-  margin-top: 2%;
+div {
+  margin: 20px;
+  height: 500px;
+  width: 350px;
+  padding: 0px 15px 15px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
+  background-color: rgba(255, 255, 255, .1);
 }
 
-button {
-  width: 90%;
-  margin: 20px;
+a {
+  margin-top: 0px;
+  align-self: flex-end;
+  text-decoration: none;
+  color: rgba(255, 255, 255, .2);
+}
+
+form :last-child {
   padding: 15px;
+  margin-top: 35px;
   border: none;
   font-size: 15px;
-  display: inline-block;
+  display: block;
   background-color: rgba(0, 0, 0, .4);
-  color: white;
+  color: rgb(255, 255, 255);
+}
+
+form :last-child:hover {
+  background-color: rgba(0, 0, 0, .5);
+  color: rgba(255, 255, 255, .4);
+  cursor: pointer;
 }
 
 img {
-  margin: 10%;
+  margin: 10px 30px 30px 30px;
   width: 150px;
   height: 150px;
 }
 
-input {
-  margin: 2px;
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form input {
+  width: 100%;
+  margin-top: 5px;
   border: none;
-  width: 90%;
   padding: 15px;
   font-size: 15px;
   color: white;
   background-color: rgba(0, 0, 0, .4);
-}
-
-span {
-  min-height: 60px;
-  margin: 2px;
-  border: none;
-  width: 90%;
-  padding: 15px;
-  font-size: 15px;
-  text-align: center;
-  color: green;
-}
-
-form :first-child {
-  margin-right: 5px;
-  align-self: flex-end;
-  text-decoration: none;
-  color: rgba(255, 255, 255, .2);
 }

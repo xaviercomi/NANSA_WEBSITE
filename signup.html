@@ -16,14 +16,16 @@
 </head>
 
 <body>
-  <form action="" method="POST">
+  <div>
     <a href="./index.html"><i class="bi bi-x-square"></i></a>
     <img src="./img/icons/nansa_icon.png">
-    <input type="text" name="username" placeholder="username">
-    <input type="text" name="password" placeholder="password">
-    <span id="server-msg-sigup"></span>
-    <button type="submit">sign up</button>
-  </form>
+    <form action="http://localhost:3000/signup" method="post" name="formSignup" id="signup-form">
+      <input type="mail" placeholder="email" name="email">
+      <input type="text" placeholder="username" name="username">
+      <input type="password" placeholder="password" name="password">
+      <input type="submit" value="sign up">
+    </form>
+  </div>
 </body>
 
 </html>
