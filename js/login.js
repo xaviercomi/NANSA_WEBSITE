@@ -8,6 +8,5 @@ const btn_Log = document.getElementById('button-login');
 let validateForm = () => {
 
 }
-}
 
 btn_Log.addEventListener('click', validateForm);

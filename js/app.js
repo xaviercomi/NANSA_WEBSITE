@@ -34,5 +34,3 @@ resource.addEventListener('mouseover', cierraVentana);
 portafolio.addEventListener('mouseover', cierraVentana);
 
 download.addEventListener('mouseover', cierraVentana);
-
-downloadCV.addEventListener('click', enterPassword);
