@@ -7,6 +7,7 @@ const resource = document.getElementById('resources');
 const portafolio = document.getElementById('portafolio');
 const download = document.getElementById('download');
 const downloadCV = document.getElementById('download-cv');
+const frasePrincipal = document.getElementById('frase-principal')
 
 function muestraVentana() {
   ventana.classList.toggle('hidden');
@@ -27,7 +28,7 @@ function cierraVentana() {
 
 nosotros.addEventListener('click', muestraVentana);
 
-botonUnete.addEventListener('mouseover', empiezaAnimacion);
+frasePrincipal.addEventListener('mouseover', empiezaAnimacion);
 
 resource.addEventListener('mouseover', cierraVentana);
 
